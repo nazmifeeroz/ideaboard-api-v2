@@ -2,7 +2,7 @@
 
 Generate new Rails API app with --api
 
-```
+```shell
 rails new --api ideaboard-api
 cd ideaboard-api
 ```
