@@ -77,6 +77,6 @@ rails s -p 3001
 ```
 
 When we open `http://localhost:3001/api/v1/ideas`, we should see our data produced in json format:
-```JSON
+```json
 [{"id":1,"title":"A new cake recipe","body":"Made of chocolate","created_at":"2017-11-30T03:59:25.301Z","updated_at":"2017-11-30T03:59:25.301Z"},{"id":2,"title":"A twitter client idea","body":"Only for replying to mentions","created_at":"2017-11-30T03:59:25.323Z","updated_at":"2017-11-30T03:59:25.323Z"},{"id":3,"title":"A novel set in Italy","body":"A mafia crime scene","created_at":"2017-11-30T03:59:25.327Z","updated_at":"2017-11-30T03:59:25.327Z"}]
 ```
