@@ -2,14 +2,14 @@
 
 Generate new Rails API app with --api
 
-```ruby
+```shell
 rails new --api ideaboard-api
 cd ideaboard-api
 ```
 
 Generate and run migration:
 
-```ruby
+```shell
 rails g model Idea title:string body:string
 rails db:migrate
 ```
@@ -37,13 +37,13 @@ ideas = Idea.create(
 ```
 
 Then run 
-```
+```shell
 rails db:seed
 ```
 
 Create an `IdeasController` with an index action in `app/controllers/api/v1/ideas_controller.rb`
 
-```
+```ruby
 module Api::V1
 
   class IdeasController < ApplicationController
@@ -61,7 +61,7 @@ end
 ```
 
 Add ideas as a resource in `config/routes.rb`:
-```
+```ruby
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
@@ -72,11 +72,11 @@ end
 ```
 
 Run rails server at port 3001:
-```
+```shell
 rails s -p 3001
 ```
 
 When we open `http://localhost:3001/api/v1/ideas`, we should see our data produced in json format:
-```
+```JSON
 [{"id":1,"title":"A new cake recipe","body":"Made of chocolate","created_at":"2017-11-30T03:59:25.301Z","updated_at":"2017-11-30T03:59:25.301Z"},{"id":2,"title":"A twitter client idea","body":"Only for replying to mentions","created_at":"2017-11-30T03:59:25.323Z","updated_at":"2017-11-30T03:59:25.323Z"},{"id":3,"title":"A novel set in Italy","body":"A mafia crime scene","created_at":"2017-11-30T03:59:25.327Z","updated_at":"2017-11-30T03:59:25.327Z"}]
 ```
