@@ -1,4 +1,4 @@
-# Ideaboard Guide - v2
+# Ideaboard Rails API Guide - v2
 
 Generate new Rails API app with --api
 
