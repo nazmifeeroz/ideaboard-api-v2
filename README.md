@@ -9,7 +9,7 @@ cd ideaboard-api
 
 Generate and run migration:
 
-```
+```ruby
 rails g model Idea title:string body:string
 rails db:migrate
 ```
