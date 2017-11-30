@@ -16,7 +16,7 @@ rails db:migrate
 
 In `db/seeds.rb`, add seeds into `idea` model:
 
-```rails
+```ruby
 puts "creating ideas..."
 ideas = Idea.create(
   [
